@@ -16,6 +16,7 @@ public class State {
 	
 	private State(){
 		ui = new TextUI();
+		mainTimer.start();
 	}
 	
 	public static State getInstance(){
@@ -26,12 +27,11 @@ public class State {
 		return money;
 	}
 	
-	boolean payFee(float amount){
+	void payFee(float amount) throws NotEnoughMoneyException{
 		if(money >= amount){
 			money -= amount;
-			return true;
 		}else{
-			return false;
+			throw new NotEnoughMoneyException();
 		}
 	}
 	
@@ -42,7 +42,6 @@ public class State {
 	
 	void startTimer(){
 		timerEnabled = true;
-		mainTimer.start();
 	}
 	
 	void stopTimer(){
@@ -79,8 +78,9 @@ public class State {
 	
 	Thread mainTimer = new Thread(new Runnable(){
 		public void run(){
-			while(timerEnabled){
-				timerTick();
+			while(true){
+				if(timerEnabled)
+					timerTick();
 				try {
 					Thread.sleep(Utils.minsToMillis(deltaT));
 				} catch (InterruptedException e) {

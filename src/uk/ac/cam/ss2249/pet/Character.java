@@ -20,25 +20,19 @@ public abstract class Character {
 	
 	public abstract String deadMessage();
 	
-	boolean feed(Food f){
-		if(State.getInstance().payFee(f.getCost()))
-			this.setHungriness(hungriness - f.getCals() * hungrinessPerCal);
-		else return false;
-		return true;
+	void feed(Food f) throws NotEnoughMoneyException{
+		State.getInstance().payFee(f.getCost());
+		this.setHungriness(hungriness - f.getCals() * hungrinessPerCal);
 	}
 	
-	boolean pet(float minutes){
-		if(State.getInstance().payFee(costPerPlayMinute * minutes))
-			this.setHappiness(happiness + minutes * playPercentPerMinute);
-		else return false;
-		return true;
+	void pet(float minutes) throws NotEnoughMoneyException{
+		State.getInstance().payFee(costPerPlayMinute * minutes);
+		this.setHappiness(happiness + minutes * playPercentPerMinute);
 	}
 	
-	boolean sleep(float time){
-		if(State.getInstance().payFee(costPerSleepMinute * time))
-			this.setTiredness(tiredness - sleepPerMinute * time);
-		else return false;
-		return true;
+	void sleep(float time) throws NotEnoughMoneyException{
+		State.getInstance().payFee(costPerSleepMinute * time);
+		this.setTiredness(tiredness - sleepPerMinute * time);
 	}
 	
 	boolean decayByTime(float deltaT){

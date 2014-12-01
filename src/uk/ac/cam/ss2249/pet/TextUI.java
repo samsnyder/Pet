@@ -60,6 +60,10 @@ public class TextUI implements UI{
 			showStatus();
 		else if(option.equals("6"))
 			die();
+		else{
+			System.out.println("Didn't quite catch that! Try again.");
+			inputOption();
+		}
 	}
 	
 	void showStatus(){
@@ -85,9 +89,10 @@ public class TextUI implements UI{
 			feed();
 			return;
 		}
-		if(c.feed(food)){
+		try{
+			c.feed(food);
 			System.out.println("Great! " + c.getName() + "'s new hungriness is " + Utils.formatP(c.getHungriness()));
-		}else{
+		}catch(NotEnoughMoneyException e){
 			System.out.println("You did not have enough money!");
 			System.out.println("You have " + Utils.formatMon(State.getInstance().getMoney()));
 			System.out.println("You need " + Utils.formatMon(food.getCost()));
@@ -99,9 +104,10 @@ public class TextUI implements UI{
 		Character c = State.getInstance().getChar();
 		System.out.println("How long would you like to play? (It costs " + Utils.formatMon(c.getCostPerPlayMinute()) + " per minute)");
 		float time = Integer.parseInt(sc.nextLine());
-		if(c.pet(time)){
+		try{
+			c.pet(time);
 			System.out.println("Great! " + c.getName() + "'s new happiness is " + Utils.formatP(c.getHappiness()));
-		}else{
+		}catch(NotEnoughMoneyException e){
 			System.out.println("You did not have enough money!");
 			System.out.println("You have " + Utils.formatMon(State.getInstance().getMoney()));
 			System.out.println("You need " + Utils.formatMon(c.getCostPerPlayMinute() * time));
@@ -129,20 +135,19 @@ public class TextUI implements UI{
 		Character c = State.getInstance().getChar();
 		System.out.println("How long would you like to sleep? (It costs " + Utils.formatMon(c.getCostPerSleepMinute()) + " per minute)");
 		float time = Integer.parseInt(sc.nextLine());
-		if(c.sleep(time)){
-			try {
-				State.getInstance().stopTimer();
-				System.out.println(c.getName() + " will sleep for " + time + " minutes...");
-				Thread.sleep(Utils.minsToMillis(time));
-				System.out.println("Great! " + c.getName() + "'s new tiredness is " + Utils.formatP(c.getHappiness()));
-				State.getInstance().startTimer();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-		}else{
+		try{
+			c.sleep(time);
+			State.getInstance().stopTimer();
+			System.out.println(c.getName() + " will sleep for " + time + " minutes...");
+			Thread.sleep(Utils.minsToMillis(time));
+			System.out.println("Great! " + c.getName() + "'s new tiredness is " + Utils.formatP(c.getHappiness()));
+			State.getInstance().startTimer();
+		}catch(NotEnoughMoneyException e){
 			System.out.println("You did not have enough money!");
 			System.out.println("You have " + Utils.formatMon(State.getInstance().getMoney()));
 			System.out.println("You need " + Utils.formatMon(c.getCostPerSleepMinute() * time));
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 		inputOption();
 	}
