@@ -75,11 +75,16 @@ public class TextUI implements UI{
 	void feed(){
 		Character c = State.getInstance().getChar();
 		System.out.println("What food would you like?");
-		for(int i=0; i<Utils.food.length; i++){
-			System.out.println((i+1) + ". " + Utils.food[i].getDesc());
+		for(int i=0; i<FoodFactory.foods.length; i++){
+			System.out.println((i+1) + ". " + FoodFactory.foods[i]);
 		}
 		int option = Integer.parseInt(sc.nextLine());
-		Food food = Utils.food[option-1].getInstance();
+		Food food = new FoodFactory().getFood(option);
+		if(food == null){
+			System.out.println("I did not recognise that. Try again!");
+			feed();
+			return;
+		}
 		if(c.feed(food)){
 			System.out.println("Great! " + c.getName() + "'s new hungriness is " + Utils.formatP(c.getHungriness()));
 		}else{

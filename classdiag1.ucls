@@ -19,16 +19,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="uk.ac.cam.ss2249.hilo.Engine" project="Pet" 
-    file="/Pet/src/uk/ac/cam/ss2249/hilo/Engine.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="440" width="156" x="1122" y="599"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <enumeration id="4" language="java" name="uk.ac.cam.ss2249.pet.Character.Status" project="Pet" 
+  <enumeration id="3" language="java" name="uk.ac.cam.ss2249.pet.Character.Status" project="Pet" 
     file="/Pet/src/uk/ac/cam/ss2249/pet/Character.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="206" width="143" x="525" y="1385"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -37,25 +28,16 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="5" language="java" name="uk.ac.cam.ss2249.customs.Pizza" project="Pet" 
+  <class id="4" language="java" name="uk.ac.cam.ss2249.customs.Pizza" project="Pet" 
     file="/Pet/src/uk/ac/cam/ss2249/customs/Pizza.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="80" width="135" x="1500" y="599"/>    
+    <position height="-1" width="-1" x="1003" y="1171"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="uk.ac.cam.ss2249.pet.Utils" project="Pet" 
-    file="/Pet/src/uk/ac/cam/ss2249/pet/Utils.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="134" width="152" x="270" y="235"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="7" language="java" name="uk.ac.cam.ss2249.customs.Fish" project="Pet" 
+  <class id="5" language="java" name="uk.ac.cam.ss2249.customs.Fish" project="Pet" 
     file="/Pet/src/uk/ac/cam/ss2249/customs/Fish.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="116" width="146" x="708" y="1385"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -64,7 +46,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="uk.ac.cam.ss2249.pet.State" project="Pet" 
+  <class id="6" language="java" name="uk.ac.cam.ss2249.pet.State" project="Pet" 
     file="/Pet/src/uk/ac/cam/ss2249/pet/State.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="314" width="232" x="828" y="235"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -73,25 +55,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="uk.ac.cam.ss2249.customs.HamburgerFactory" project="Pet" 
-    file="/Pet/src/uk/ac/cam/ss2249/customs/HamburgerFactory.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="116" width="151" x="462" y="235"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <enumeration id="10" language="java" name="uk.ac.cam.ss2249.pet.Utils.Characters" project="Pet" 
-    file="/Pet/src/uk/ac/cam/ss2249/pet/Utils.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="116" width="137" x="270" y="599"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </enumeration>  
-  <class id="11" language="java" name="uk.ac.cam.ss2249.customs.Dog" project="Pet" 
+  <class id="7" language="java" name="uk.ac.cam.ss2249.customs.Dog" project="Pet" 
     file="/Pet/src/uk/ac/cam/ss2249/customs/Dog.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="116" width="146" x="894" y="1385"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -100,61 +64,16 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="12" language="java" name="uk.ac.cam.ss2249.pet.FoodFactory" project="Pet" 
-    file="/Pet/src/uk/ac/cam/ss2249/pet/FoodFactory.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="98" width="128" x="462" y="599"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <class id="13" language="java" name="uk.ac.cam.ss2249.customs.PizzaFactory" project="Pet" 
-    file="/Pet/src/uk/ac/cam/ss2249/customs/PizzaFactory.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="116" width="135" x="653" y="235"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="14" language="java" name="uk.ac.cam.ss2249.hilo.HiLoUI" project="Pet" 
-    file="/Pet/src/uk/ac/cam/ss2249/hilo/HiLoUI.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="206" width="145" x="1318" y="235"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <interface id="15" language="java" name="uk.ac.cam.ss2249.hilo.HiLoUI.HiLoInterface" project="Pet" 
-    file="/Pet/src/uk/ac/cam/ss2249/hilo/HiLoUI.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="80" width="142" x="1318" y="599"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <class id="16" language="java" name="uk.ac.cam.ss2249.pet.Food" project="Pet" 
+  <class id="8" language="java" name="uk.ac.cam.ss2249.pet.Food" project="Pet" 
     file="/Pet/src/uk/ac/cam/ss2249/pet/Food.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="188" width="124" x="1588" y="235"/>    
+    <position height="-1" width="-1" x="1086" y="861"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="17" language="java" name="uk.ac.cam.ss2249.pet.Main" project="Pet" 
-    file="/Pet/src/uk/ac/cam/ss2249/pet/Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="98" width="125" x="105" y="235"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="18" language="java" name="uk.ac.cam.ss2249.pet.TextUI" project="Pet" 
+  <class id="9" language="java" name="uk.ac.cam.ss2249.pet.TextUI" project="Pet" 
     file="/Pet/src/uk/ac/cam/ss2249/pet/TextUI.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="278" width="158" x="1110" y="235"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -163,102 +82,71 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="19" language="java" name="uk.ac.cam.ss2249.customs.Hamburger" project="Pet" 
+  <class id="10" language="java" name="uk.ac.cam.ss2249.customs.Hamburger" project="Pet" 
     file="/Pet/src/uk/ac/cam/ss2249/customs/Hamburger.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="80" width="135" x="1675" y="599"/>    
+    <position height="-1" width="-1" x="1178" y="1171"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="20">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="21" name="food"/>      
-      <multiplicity id="22" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="23">    
-    <end type="SOURCE" refId="11"/>    
+  <class id="11" language="java" name="uk.ac.cam.ss2249.pet.FoodFactory" project="Pet" 
+    file="/Pet/src/uk/ac/cam/ss2249/pet/FoodFactory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1191" y="641"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="12">    
+    <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="2"/>  
   </generalization>  
-  <nesting id="24">    
+  <nesting id="13">    
     <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="4"/>  
+    <end type="TARGET" refId="3"/>  
   </nesting>  
-  <association id="25">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="26" name="e"/>      
-      <multiplicity id="27" minimum="0" maximum="1"/>    
+  <realization id="14">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="1"/>  
+  </realization>  
+  <association id="15">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="16" name="status"/>      
+      <multiplicity id="17" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="28">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="29" name="ui"/>      
-      <multiplicity id="30" minimum="0" maximum="1"/>    
+  <generalization id="18">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <association id="19">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="20" name="ui"/>      
+      <multiplicity id="21" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="31">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="32" name="status"/>      
-      <multiplicity id="33" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <nesting id="34">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="10"/>  
-  </nesting>  
-  <generalization id="35">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="2"/>  
+  <generalization id="22">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="8"/>  
   </generalization>  
-  <nesting id="36">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="15"/>  
-  </nesting>  
-  <realization id="37">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="12"/>  
-  </realization>  
-  <association id="38">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="39" name="currentChar"/>      
-      <multiplicity id="40" minimum="0" maximum="1"/>    
+  <association id="23">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="24" name="currentChar"/>      
+      <multiplicity id="25" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="41">    
-    <end type="SOURCE" refId="18"/>    
-    <end type="TARGET" refId="1"/>  
-  </realization>  
-  <realization id="42">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="12"/>  
-  </realization>  
-  <association id="43">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="44" name="interf"/>      
-      <multiplicity id="45" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="46">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="16"/>  
-  </generalization>  
-  <generalization id="47">    
+  <generalization id="26">    
     <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="16"/>  
+    <end type="TARGET" refId="2"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
